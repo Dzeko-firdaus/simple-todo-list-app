@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My To-Do List</title>
+</head>
+
+<body>
+    <main class="animate-on-load">
+        <section class="section-form">
+            <div class="header-container">
+                <img src="todo-icon.png" alt=" To-do logo" width="52px" height="52px">
+                <h1>&nbsp;My To-Do List</h1>
+                <p id="current-date"></p>
+            </div>
+            
+            <div class="searchbar-container">
+                <form name="todo-adder" class="searchbar">
+                    <input type="text" placeholder="Add your task here" id="todo-entry-box" required>
+                    <button type="button" id="add-button">Add</button>
+                </form>
+            </div>
+        </section>
+
+        
+        <section class="section-list">
+
+            <p><i>Double click your task when you have finished it!</i></p>
+
+            <div class="flex-container">
+
+                <div class="container-1">
+                    <ul id="todo-list"></ul>
+                </div>
+
+                <div class="container-2">
+
+                    <button id="clear-completed-button" onclick="clearCompletedToDoItems()">Clear Completed
+                        </button> 
+                    <button id="empty-button" onclick="emptyList()">Empty List</button> 
+                    <button id="save-button" onclick="saveList()">Save List</button>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
